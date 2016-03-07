@@ -20,7 +20,7 @@ module Lita
       config :excluded_domains, type: Array
 
       route(/^(?:google|g)\s+(.+)/i, :search, command: true, help: {
-        "google QUERY" => "Return the first Google search result for QUERY."
+        "g QUERY" => "Return the first Google search result for QUERY."
       })
 
       def search(response)
